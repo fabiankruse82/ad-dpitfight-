@@ -1,20 +1,3 @@
-/* Combat Code */ 
-
-//Test Character
-
-const player = {
-    name: "Guy",
-    health: 20,
-    armor: 10
-}
-
-const monster = {
-    name: "Goblin",
-    health: 20,
-    armor: 5
-}
-
-
 //Die Rolls
 
 function roll1D4() {
@@ -52,15 +35,3 @@ function thatHitMeQ(init, target, hitRoll, dmgRoll) {
         return "Miss"
     }
 }
-
-
-console.log(thatHitMeQ(player,monster,roll1D20,roll1D10));
-console.log(monster.health);
-
-
-console.log(roll1D4());
-console.log(roll1D6());
-console.log(roll1D8());
-console.log(roll1D10());
-console.log(roll1D12());
-console.log(roll1D20());
